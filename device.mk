@@ -96,5 +96,8 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.device.rc
 
+# Droidmedia: We need this for video recorder to be fixed.
+MINIMEDIA_AUDIOPOLICYSERVICE_ENABLE := 1
+
 # Inherit proprietary files
 $(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
